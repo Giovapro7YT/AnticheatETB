@@ -61,7 +61,7 @@ For a run to be accepted using this tool:
 ## 🤝 Credits & Contact
 
 * **Developed by:** Giovapro7YT
-* **Community:** [[Escape the Backrooms Speedrunning Discord Link]](https://discord.com/invite/6HSRuuxGqr)
+* **Community:** https://discord.com/invite/6HSRuuxGqr
 * **Bug Reports / False Positives:** Open an *Issue* in this repository or message me on Discord (`giovapro7ytoficial`).
 
 *This project is an independent community tool created to support the Escape the Backrooms speedrunning scene and is not officially affiliated with Fancy Games.*
