@@ -21,10 +21,10 @@ A community-built component integrated directly into **LiveSplit** designed to e
 
 ## 🚀 Installation
 
-1. Download the latest `.dll` release from the [Releases](https://github.com/YOUR_USERNAME/YOUR_REPO/releases) tab.
+1. Download the latest `.dll` release from the [Releases](https://github.com/Giovapro7YT/AnticheatETB/releases) tab.
 2. Move `[FileName].dll` into the `Components` folder inside your **LiveSplit** directory (e.g., `C:\LiveSplit\Components\`).
 3. Open **LiveSplit**, right-click on it, and select **Edit Layout...**
-4. Click the **`+`** button -> **Other** (or *Control*) -> select **[Your Anti-Cheat Name]**.
+4. Click the **`+`** button -> **Other** (or *Control*) -> select **AnticheatETB**.
 5. Make sure the component is active before starting your run attempt.
 
 ## ⚙️ How It Works & Status Indicators
@@ -62,7 +62,7 @@ For a run to be accepted using this tool:
 
 * **Developed by:** [Giovapro7YT]
 * **Community:** [Escape the Backrooms Speedrunning Discord Link]
-* **Bug Reports / False Positives:** Open an *Issue* in this repository or message me on Discord (`[Your Discord Tag]`).
+* **Bug Reports / False Positives:** Open an *Issue* in this repository or message me on Discord (`giovapro7ytoficial`).
 
 *This project is an independent community tool created to support the Escape the Backrooms speedrunning scene and is not officially affiliated with Fancy Games.*
 
@@ -84,7 +84,7 @@ Un componente comunitario integrado directamente en **LiveSplit** diseñado para
 
 ## 🚀 Instalación
 
-1. Descarga la última versión del archivo `.dll` desde la sección de [Releases](https://github.com/TU_USUARIO/TU_REPO/releases).
+1. Descarga la última versión del archivo `.dll` desde la sección de [Releases](https://github.com/Giovapro7YT/AnticheatETB/releases).
 2. Mueve el archivo `[NombreDelArchivo].dll` a la carpeta `Components` dentro del directorio donde tienes instalado **LiveSplit** (ej. `C:\LiveSplit\Components\`).
 3. Abre **LiveSplit**, haz clic derecho sobre él y selecciona **Edit Layout...**
 4. Haz clic en el botón **`+`** -> **Other** (o *Control*) -> selecciona **[Nombre de tu Anti-Cheat]**.
@@ -125,6 +125,6 @@ Para que una run sea aceptada utilizando esta herramienta:
 
 * **Desarrollado por:** [Giovapro7YT]
 * **Comunidad:** [Enlace al Discord de Escape the Backrooms Speedrunning]
-* **Reportar Bugs / Falsos Positivos:** Abre un *Issue* en este repositorio o contáctame vía Discord (`[Tu Usuario]`).
+* **Reportar Bugs / Falsos Positivos:** Abre un *Issue* en este repositorio o contáctame vía Discord (`Giovapro7YT`).
 
 *Este proyecto es una herramienta independiente creada para apoyar la escena competitiva de Escape the Backrooms y no está afiliada oficialmente con Fancy Games.*
