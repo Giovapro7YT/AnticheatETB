@@ -22,7 +22,7 @@ A community-built component integrated directly into **LiveSplit** designed to e
 ## 🚀 Installation
 
 1. Download the latest `.dll` release from the [Releases](https://github.com/Giovapro7YT/AnticheatETB/releases) tab.
-2. Move `[FileName].dll` into the `Components` folder inside your **LiveSplit** directory (e.g., `C:\LiveSplit\Components\`).
+2. Move `AnticheatETB.dll` into the `Components` folder inside your **LiveSplit** directory (e.g., `C:\LiveSplit\Components\`).
 3. Open **LiveSplit**, right-click on it, and select **Edit Layout...**
 4. Click the **`+`** button -> **Other** (or *Control*) -> select **AnticheatETB**.
 5. Make sure the component is active before starting your run attempt.
