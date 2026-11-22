@@ -115,7 +115,7 @@ Para que una run sea aceptada utilizando esta herramienta:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPO.git
+   git clone https://github.com/Giovapro7YT/AnticheatETB.git
    ```
 2. Abre la solución `.sln` en **Visual Studio 2022**.
 3. Asegúrate de tener referenciada la librería `LiveSplit.Core.dll` en las dependencias del proyecto.
