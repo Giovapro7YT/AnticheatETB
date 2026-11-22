@@ -1,63 +1,58 @@
+<div align="center">
+
 # 🛡️ Escape the Backrooms - Speedrun Anti-Cheat & LiveSplit Component
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![LiveSplit](https://img.shields.io/badge/LiveSplit-Compatible-brightgreen.svg)
 ![Game](https://img.shields.io/badge/Game-Escape%20the%20Backrooms-yellow.svg)
 
-Un componente oficial/comunitario integrado directamente en **LiveSplit** diseñado para garantizar la integridad competitiva, detectar modificaciones no autorizadas y validar runs de **Escape the Backrooms** de forma automática y transparente.
+**Select Language / Selecciona tu idioma:**  
+[🇬🇧 English](#-english) • [🇪🇸 Español](#-español)
+
+</div>
 
 ---
 
-## 📋 Características Principales
+## 🇬🇧 English
 
-* **Integración Nativa en LiveSplit:** Funciona directamente dentro de tu layout sin necesidad de ejecutar programas externos pesados en segundo plano.
-* **Verificación de Integridad de Archivos:** Comprueba los hashes (SHA-256) de los ejecutables y archivos `.pak` del juego para asegurar que no hay mods de ventaja, cambios de hitboxes o modificaciones en los mapas.
-* **Detección de Inyección y Procesos Externos:** Monitorea en tiempo real el uso de herramientas prohibidas (Cheat Engine, modificadores de velocidad/Speedhack, inyectores de DLL, etc.).
-* **Validación de Configuración (`Engine.ini` / `GameUserSettings.ini`):** Verifica que los parámetros gráficos y de motor no excedan los límites permitidos por las reglas de la leaderboard (ej. eliminación total de niebla/oscuridad o modificaciones de FOV ilegales).
-* **Registro Criptográfico de la Run (Run Log):** Genera una firma/código de verificación único al finalizar la partida que los moderadores pueden comprobar fácilmente.
-* **Cero Impacto en el Rendimiento:** Diseñado en C# optimizado para no afectar los FPS ni el frametime durante la partida.
+A community-built component integrated directly into **LiveSplit** designed to ensure competitive integrity, detect unauthorized modifications, and automatically validate **Escape the Backrooms** speedruns in a lightweight and transparent way.
 
----
+### 📋 Key Features
 
-## 🚀 Instalación
+* **Native LiveSplit Integration:** Runs directly inside your LiveSplit layout with no need for heavy external background software.
+* **File Integrity Verification:** Checks SHA-256 hashes of the game's executables and `.pak` files to ensure no advantage mods, hitbox alterations, or map edits are present.
+* **External Process & Injection Detection:** Monitors in real-time for prohibited tools (Cheat Engine, speedhacks, DLL injectors, unauthorized macros, etc.).
+* **Config Validation (`Engine.ini` / `GameUserSettings.ini`):** Verifies that engine and graphical parameters stay within leaderboard rules (e.g., preventing full fog/darkness removal or illegal FOV tweaks).
+* **Cryptographic Run Log:** Generates a unique verification signature/hash at the end of the run that moderators can easily validate.
+* **Zero Performance Impact:** Built in optimized C# to ensure zero impact on FPS or frametimes during gameplay.
 
-1. Descarga la última versión del archivo `.dll` desde la sección de [Releases](https://github.com/TU_USUARIO/TU_REPO/releases).
-2. Mueve el archivo `[NombreDelArchivo].dll` a la carpeta `Components` dentro del directorio donde tienes instalado **LiveSplit** (ej. `C:\LiveSplit\Components\`).
-3. Abre **LiveSplit**, haz clic derecho sobre él y selecciona **Edit Layout...**
-4. Haz clic en el botón **`+`** -> **Other** (o *Control*) -> selecciona **[Nombre de tu Anti-Cheat]**.
-5. Asegúrate de que el componente esté activo antes de iniciar tu intento.
+### 🚀 Installation
 
----
+1. Download the latest `.dll` release from the [Releases](https://github.com/YOUR_USERNAME/YOUR_REPO/releases) tab.
+2. Move `[FileName].dll` into the `Components` folder inside your **LiveSplit** directory (e.g., `C:\LiveSplit\Components\`).
+3. Open **LiveSplit**, right-click on it, and select **Edit Layout...**
+4. Click the **`+`** button -> **Other** (or *Control*) -> select **[Your Anti-Cheat Name]**.
+5. Make sure the component is active before starting your run attempt.
 
-## ⚙️ Cómo Funciona y Estados del Indicador
+### ⚙️ How It Works & Status Indicators
 
-Durante la run, el componente mostrará un estado visual en tu layout de LiveSplit (o en los logs internos):
+During a run, the component displays a live status indicator on your LiveSplit layout (and records it in the session logs):
 
-* 🟢 **VALID / CLEAN:** El juego y el entorno cumplen con todas las normativas. La run es elegible para verificación.
-* 🟡 **WARNING:** Se detectó una anomalía menor o un cambio de configuración durante la sesión (requiere revisión manual).
-* 🔴 **FLAGGED / INVALID:** Se detectó una modificación prohibida, alteración de memoria o archivo corrupto.
+* 🟢 **VALID / CLEAN:** The game and environment comply with all rules. The run is eligible for leaderboard verification.
+* 🟡 **WARNING:** A minor anomaly or config change was detected during the session (requires manual moderator review).
+* 🔴 **FLAGGED / INVALID:** A prohibited modification, memory alteration, or corrupted/modified game file was detected.
 
-### ¿Qué datos se recopilan?
-Por respeto a la privacidad de los corredores, este anti-cheat **no recopila información personal**. Únicamente lee:
-* Hashes de los archivos del directorio de *Escape the Backrooms*.
-* Variables específicas de memoria del proceso del juego (estado de partida, versión, parámetros básicos).
-* Lista de procesos activos relacionados con herramientas de depuración o alteración de memoria.
+**Privacy & Data Collection:**  
+Out of respect for runners' privacy, this anti-cheat **does not collect any personal data**. It only reads file hashes within the *Escape the Backrooms* installation directory, specific game process memory pointers (game state, version, basic parameters), and active processes strictly related to debugging, memory editing, or prohibited automation tools.
 
----
+### 📜 Moderation Requirements (Speedrun.com)
 
-## 📜 Requisitos para Moderación (Speedrun.com)
+1. The component must remain visible on the LiveSplit layout throughout the entire VOD recording (or display the final verification hash at the end of the run).
+2. Do not close, remove, or restart the component mid-run.
+3. In the event of a false positive, reach out to the moderation team and attach the generated log file located at `[Log Path, e.g., LiveSplit/Logs/]`.
 
-Para que una run sea aceptada utilizando esta herramienta:
-1. El componente debe ser visible en el layout de LiveSplit durante toda la grabación del VOD (o mostrar el código de verificación al final de la run).
-2. No se debe cerrar ni reiniciar el componente a mitad de una partida válida.
-3. En caso de falso positivo, contacta con el equipo de moderación adjuntando el archivo de log generado en `[Ruta del Log, ej. LiveSplit/Logs/]`.
+### 🛠️ Building from Source
 
----
-
-## 🛠️ Compilación desde el Código Fuente (Para Desarrolladores)
-
-Si deseas auditar el código o compilarlo por tu cuenta:
-
-1. Clona este repositorio:
+1. Clone this repository:
    ```bash
-   git clone [https://github.com/TU_USUARIO/TU_REPO.git](https://github.com/TU_USUARIO/TU_REPO.git)
+   git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
